@@ -1,0 +1,29 @@
+.provider-more {
+  background-color: #ffffff;
+  width: 160px;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  position: absolute;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.provider-more__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.provider-more__list-item:not(:last-of-type) {
+  border-bottom: 1px solid #dadada;
+}
+.provider-more__link {
+  color: #000000;
+  padding: 11px 16px;
+  display: block;
+
+  &:visited {
+    color: #000000;
+  }
+  &:hover {
+    color: #54d0ff;
+  }
+}

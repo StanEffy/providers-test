@@ -1,0 +1,29 @@
+.main-nav {
+  background-color: #264e66;
+  min-height: 100%;
+  width: 70px;
+}
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main-nav__link {
+  color: #ffffff;
+  display: flex;
+  height: 70px;
+  width: 70px;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  &:visited {
+    color: #ffffff;
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}

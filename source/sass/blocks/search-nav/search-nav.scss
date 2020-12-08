@@ -1,0 +1,113 @@
+.search-nav {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 14px;
+  padding-bottom: 13px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+
+.search-nav__list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.search-nav__item:last-of-type {
+  margin-left: auto;
+}
+.search-nav__link {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #000000;
+  &:visited {
+    color: #000000;
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}
+.search-nav__link-back {
+  width: 62px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search-nav__link-kpi {
+  width: 124px;
+}
+.search-nav__input {
+  margin-left: 30px;
+  padding: 10px 13px;
+  border: 1px solid #dbe5eb;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin-right: -4px;
+  box-sizing: border-box;
+  background-color: #f5f9fc;
+}
+.search-case-button {
+  background-color: #54d0ff;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 11px 13px;
+  border-right: none;
+  border-top: none;
+  transform: rotate(180deg);
+  margin-right: 28px;
+}
+.search-nav__user-login {
+  position: relative;
+  border: none;
+  background-color: transparent;
+  padding: 10px 13px;
+  padding-right: 20px;
+
+  ::after {
+    display: block;
+    position: absolute;
+    content: "";
+    border: 2px solid #888888;
+    border-left: transparent;
+    border-top: transparent;
+    top: 14px;
+    right: 2px;
+    width: 5px;
+    height: 5px;
+    transform: rotate(45deg);
+  }
+}
+@media (max-width: "767px") {
+  .search-nav {
+    flex-wrap: wrap;
+  }
+  .search-nav__input {
+    width: 100px;
+    margin-left: 10px;
+  }
+  .search-nav__list {
+    flex-wrap: wrap;
+  }
+  .search-nav__link-kpi {
+  }
+  @media (max-width: "678px") {
+    .search-nav__user-login {
+      //margin-top: 10px;
+    }
+    .search-nav__item:last-of-type {
+      margin-left: 0;
+      padding: 10px 0;
+    }
+  }
+}

@@ -1,0 +1,99 @@
+.provider__info--type {
+  width: 95px;
+  box-sizing: border-box;
+}
+.provider__info-type-icons {
+  width: 50%;
+}
+.provider__info--type {
+  display: flex;
+  flex-direction: row;
+
+  padding-left: 20px;
+}
+.provider__info-type-icons {
+  width: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.provider-status__icon {
+  width: 30px;
+}
+
+.provider-details {
+  border: none;
+  background-image: url("../img/kebab.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.8;
+  width: 45px;
+  background-color: transparent;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.provider__info--name {
+  padding-left: 20px;
+  width: 170px;
+}
+.provider__info--email {
+  padding-left: 20px;
+  width: 210px;
+}
+.provider__info--phone {
+  padding-left: 20px;
+  width: 150px;
+}
+.provider__info--id {
+  padding-left: 20px;
+  width: 50px;
+}
+.provider__info--status {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 370px;
+}
+.provider-status__icon {
+  display: flex;
+  align-items: center;
+  padding-right: 14px;
+}
+.provider-status__inner-cover {
+  cursor: pointer;
+}
+.provider-status__text {
+  margin: 0;
+  width: 165px;
+}
+.provider-status__text-span {
+  border-bottom: 1px dashed #8a8a8a;
+}
+@media (max-width: "767px") {
+  .provider__info {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    //border: 1px solid firebrick;
+    width: auto;
+  }
+  .provider__info--type {
+    order: -1;
+  }
+  .provider__info--id {
+    order: -1;
+  }
+  .provider__info--status {
+    flex-grow: 1;
+    padding: 0;
+  }
+  .provider-status__text {
+    width: auto;
+  }
+  .provider-status__buttons-cover {
+    margin-left: auto;
+  }
+  .provider-status__inner-cover {
+    padding-left: 20px;
+  }
+}

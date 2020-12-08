@@ -1,0 +1,115 @@
+.modal__overlay {
+  background-color: rgba(168, 168, 168, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.modal {
+  border-radius: 5px;
+  background-color: #ffffff;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.modal-close {
+  width: 25px;
+  height: 25px;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-right: 10px;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  &:focus {
+    outline: none;
+    &:after {
+      background-color: red;
+    }
+    &::before {
+      background-color: red;
+    }
+  }
+  &:hover {
+    outline: none;
+    &:after {
+      background-color: red;
+    }
+    &::before {
+      background-color: red;
+    }
+  }
+  &:after {
+    display: block;
+    position: absolute;
+    width: 17px;
+    height: 2px;
+    background-color: #6d7f8a;
+    content: "";
+    top: 9px;
+    right: 2px;
+    transform: rotate(45deg);
+  }
+  &:before {
+    display: block;
+    position: absolute;
+    width: 17px;
+    height: 2px;
+    background-color: #6d7f8a;
+    content: "";
+    top: 9px;
+    right: 2px;
+    transform: rotate(-45deg);
+  }
+}
+.modal-header {
+  font-size: 14px;
+  margin: 0;
+  margin-left: 20px;
+  width: 80%;
+}
+.modal__textarea {
+  border-radius: 3px;
+  background-color: #eeeeee;
+  padding-left: 10px;
+  padding-top: 10px;
+  margin: 20px;
+  margin-bottom: 0;
+  min-height: 110px;
+  resize: none;
+}
+.modal__button-save {
+  background-color: #54d0ff;
+  color: #ffffff;
+}
+.modal__star-rating {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.modal__star {
+  background-image: url("../img/star-grey.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 21px;
+  height: 20px;
+}
+.modal__star--gold {
+  background-image: url("../img/star-gold.svg");
+}
+.modal__button-save {
+  margin: 20px;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 3px;
+  border: none;
+}

@@ -1,0 +1,42 @@
+/* this file is used for global/global.scss 
+This is kind'a shame.scss */
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  height: 100%;
+  font-size: 15px;
+  line-height: 20px;
+  font-family: $openS;
+  color: #283645;
+  font-style: normal;
+  font-family: "Lato", sans-serif;
+  position: relative;
+}
+a {
+  text-decoration: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  display: none;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  content: "";
+  white-space: nowrap;
+
+  border: 0;
+
+  -webkit-clip-path: inset(100%);
+
+  clip-path: inset(100%);
+}

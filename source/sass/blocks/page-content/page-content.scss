@@ -1,0 +1,14 @@
+.page-content {
+  padding: 20px;
+  margin: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+@media (max-width: "767px") {
+  .page-content {
+    padding: 0px;
+    margin: 0px;
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+}

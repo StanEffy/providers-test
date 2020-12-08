@@ -1,0 +1,14 @@
+@import "global/variables.scss";
+@import "global/mixins.scss";
+@import "global/global-page.scss";
+
+@import "./blocks/main-nav/main-nav.scss";
+@import "./blocks/main-content/main-content.scss";
+@import "./blocks/search-nav/search-nav.scss";
+@import "./blocks/page-content/page-content.scss";
+@import "./blocks/providers/providers-table.scss";
+@import "./blocks/providers/provider-info.scss";
+
+@import "./blocks/modal/modal.scss";
+@import "./blocks/providers/provider-modal.scss";
+@import "./blocks/providers/provider-more.scss";

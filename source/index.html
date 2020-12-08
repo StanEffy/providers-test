@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Test</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="main-page">
+	<div class="main">
+
+		<nav class="main-nav">
+			<ul class="main-nav__list">
+				<li class="main-nav__element"><a href="#" class="main-nav__link">
+						<svg width="34px" height="29px">
+							<use xlink:href='img/sprite.svg#logo'></use>
+						</svg>
+					</a></li>
+				<li class="main-nav__element"><a href="#" class="main-nav__link"><svg width="30px" height="17px">
+							<use xlink:href='img/sprite.svg#dashboard'></use>
+						</svg>Dashboard</a></li>
+				<li class="main-nav__element"><a href="#" class="main-nav__link"><svg width="27px" height="27px">
+							<use xlink:href='img/sprite.svg#faq'></use>
+						</svg>FAQ</a></li>
+				<li class="main-nav__element"><a href="#" class="main-nav__link main-nav__link-logout"><svg width="20px"
+							height="20px">
+							<use xlink:href='img/sprite.svg#sign-out'></use>
+						</svg>Sign out</a></li>
+			</ul>
+		</nav>
+
+		<div class="main-content__cover">
+			<nav class="search-nav">
+				<ul class="search-nav__list">
+					<li class="search-nav__item">
+						<a class="search-nav__link search-nav__link-back" href="#">
+							<svg width="13px" height="13px">
+								<use xlink:href='img/sprite.svg#back-1'></use>
+							</svg><span>Back</span></a>
+					</li>
+					<li class="search-nav__item">
+						<form class="search-nav__form">
+							<input type="text" name="case" id="case-search" placeholder="Go to case ID#" class="search-nav__input">
+							<button class="search-case-button" type="submit">
+								<svg width="13px" height="13px" fill='#fff'>
+									<use xlink:href=' img/sprite.svg#forward'></use>
+								</svg>
+							</button>
+						</form>
+					</li>
+					<li class="search-nav__item">
+						<a class="search-nav__link-kpi search-nav__link" href="#"><svg width="17px" height="13px">
+								<use xlink:href='img/sprite.svg#kpi'></use>
+							</svg><span>Fulfilment KPIs</span></a></li>
+
+				</ul>
+				<button class="search-nav__user-login">leo@truecare24.com <span class="search-nav__user-span"></span></button>
+			</nav>
+			<div class="page-content">
+				<h2 class="providers-caption">Matched providers</h2>
+				<div class="providers-table">
+					<ul class="providers-table__head providers-table__row">
+						<li class="providers-table__head-item providers-table__head-item--type">Type</li>
+						<li class="providers-table__head-item providers-table__head-item--name">Name</li>
+						<li class="providers-table__head-item providers-table__head-item--email">Email</li>
+						<li class="providers-table__head-item providers-table__head-item--phone">Phone</li>
+						<li class="providers-table__head-item providers-table__head-item--id">ID</li>
+						<li class="providers-table__head-item providers-table__head-item--status">Status</li>
+					</ul>
+					<ul class="providers-table__providers-list">
+						<li class="providers-list__item">
+							<ul class="provider providers-table__row">
+								<li class="provider__info provider__info--type">
+									<div class="provider__info-type-icons">
+										<svg width="14px" height="18px">
+											<use xlink:href='img/sprite.svg#flag'></use>
+										</svg>
+									</div>
+									<div class="provider__info-type-icons">
+										<svg width="15px" height="16px">
+											<use xlink:href='img/sprite.svg#person'></use>
+										</svg>
+									</div>
+								</li>
+								<li class="provider__info provider__info--name">Lucile Munoz</li>
+								<li class="provider__info provider__info--email">oceane.torp@brennan.us</li>
+								<li class="provider__info provider__info--phone">+1 (727) 829-15-39</li>
+								<li class="provider__info provider__info--id">7543</li>
+								<li class="provider__info provider__info--status">
+									<div class="provider-status__inner-cover">
+										<div class="provider-status__icon ">
+											<svg width="17px" height="14px">
+												<use xlink:href='img/sprite.svg#forward-arrow'></use>
+											</svg>
+										</div>
+										<p class="provider-status__text"><span class="provider-status__text-span">Contacting</span></p>
+									</div>
+									<div class="provider-status__buttons-cover"><button
+											class="provider-table__button provider-table__button--blue">Chat</button><button
+											class="provider-table__button provider-table__button--green">Call</button><button
+											class="provider-details"></button></div>
+								</li>
+							</ul>
+						</li>
+						<li class="providers-list__item">
+							<ul class="provider providers-table__row">
+								<li class="provider__info provider__info--type">
+									<div class="provider__info-type-icons">
+										<svg width="14px" height="18px">
+											<use xlink:href='img/sprite.svg#flag'></use>
+										</svg>
+									</div>
+									<div class="provider__info-type-icons">
+										<svg width="15px" height="16px">
+											<use xlink:href='img/sprite.svg#person'></use>
+										</svg>
+									</div>
+								</li>
+								<li class="provider__info provider__info--name">Winifred Henderson</li>
+								<li class="provider__info provider__info--email">landen_deckow@hotmail.com</li>
+								<li class="provider__info provider__info--phone">+1 (532) 831-5321</li>
+								<li class="provider__info provider__info--id">9755</li>
+								<li class="provider__info provider__info--status">
+									<div class="provider-status__inner-cover">
+										<div class="provider-status__icon">
+											<svg width="16px" height="16px">
+												<use xlink:href='img/sprite.svg#talked-to-client'></use>
+											</svg>
+										</div>
+										<p class="provider-status__text"><span class="provider-status__text-span">Talked to the
+												client</span></p>
+									</div>
+									<div class="provider-status__buttons-cover"><button
+											class="provider-table__button provider-table__button--blue">Chat</button><button
+											class="provider-table__button provider-table__button--green">Call</button><button
+											class="provider-details"></button></div>
+								</li>
+							</ul>
+						</li>
+						<li class="providers-list__item">
+							<ul class="provider providers-table__row">
+								<li class="provider__info provider__info--type">
+									<div class="provider__info-type-icons">
+										<svg width="10px" height="2px">
+											<use xlink:href='img/sprite.svg#dash'></use>
+										</svg>
+									</div>
+									<div class="provider__info-type-icons">
+										<svg width="15px" height="16px">
+											<use xlink:href='img/sprite.svg#person'></use>
+										</svg>
+									</div>
+								</li>
+								<li class="provider__info provider__info--name">Birdie Carson</li>
+								<li class="provider__info provider__info--email">dietrich_amiya@yahoo.com</li>
+								<li class="provider__info provider__info--phone">+1 (673) 223-7397</li>
+								<li class="provider__info provider__info--id">3421</li>
+								<li class="provider__info provider__info--status">
+									<div class="provider-status__inner-cover">
+										<div class="provider-status__icon">
+											<svg width="22px" height="14px">
+												<use xlink:href='img/sprite.svg#assessment'></use>
+											</svg>
+										</div>
+										<p class="provider-status__text"><span class="provider-status__text-span">Assessment
+												scheduled</span></p>
+									</div>
+									<div class="provider-status__buttons-cover"><button
+											class="provider-table__button provider-table__button--blue">Chat</button><button
+											class="provider-table__button provider-table__button--green">Call</button><button
+											class="provider-details"></button></div>
+								</li>
+							</ul>
+						</li>
+						<li class="providers-list__item">
+							<ul class="provider providers-table__row">
+								<li class="provider__info provider__info--type">
+									<div class="provider__info-type-icons"><svg width="10px" height="2px">
+											<use xlink:href='img/sprite.svg#dash'></use>
+										</svg></div>
+									<div class="provider__info-type-icons"><svg width="14px" height="17px">
+											<use xlink:href='img/sprite.svg#home-care'></use>
+										</svg></div>
+								</li>
+								<li class="provider__info provider__info--name">Family Care SF, Inc.</li>
+								<li class="provider__info provider__info--email">dorothy.lesch@dickinson.me</li>
+								<li class="provider__info provider__info--phone">+1 (866) 124-5438</li>
+								<li class="provider__info provider__info--id">7675</li>
+								<li class="provider__info provider__info--status">
+									<div class="provider-status__inner-cover">
+										<div class="provider-status__icon">
+											<svg width="17px" height="17px">
+												<use xlink:href='img/sprite.svg#contract-signed'></use>
+											</svg></div>
+										<p class="provider-status__text"><span class="provider-status__text-span">Contract Signed</span></p>
+									</div>
+									<div class="provider-status__buttons-cover"><button
+											class="provider-table__button provider-table__button--blue">Chat</button><button
+											class="provider-table__button provider-table__button--green">Call</button><button
+											class="provider-details"></button></div>
+								</li>
+							</ul>
+						</li>
+						<li class="providers-list__item providers-list__item--cancel">
+							<ul class="provider providers-table__row">
+								<li class="provider__info provider__info--type">
+									<div class="provider__info-type-icons">
+										<svg width="14px" height="18px">
+											<use xlink:href='img/sprite.svg#flag'></use>
+										</svg>
+									</div>
+									<div class="provider__info-type-icons">
+										<svg width="15px" height="16px">
+											<use xlink:href='img/sprite.svg#person'></use>
+										</svg>
+									</div>
+								</li>
+								<li class="provider__info provider__info--name">Barry Alexander</li>
+								<li class="provider__info provider__info--email">reilly.julius@gmail.com</li>
+								<li class="provider__info provider__info--phone">+1 (885) 163-9766</li>
+								<li class="provider__info provider__info--id">5553</li>
+								<li class="provider__info provider__info--status">
+									<div class="provider-status__inner-cover">
+										<div class="provider-status__icon">
+											<svg width="14px" height="18px">
+												<use xlink:href='img/sprite.svg#cancel'></use>
+											</svg>
+										</div>
+										<p class="provider-status__text"><span class="provider-status__text-span">Cancel the client</span>
+										</p>
+									</div>
+									<div class="provider-status__buttons-cover"><button
+											class="provider-table__button provider-table__button--blue">Chat</button><button
+											class="provider-table__button provider-table__button--green">Call</button><button
+											class="provider-details"></button></div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="modal__overlay visually-hidden">
+		<div class="modal">
+			<button class="modal-close"></button>
+			<h2 class="modal-header">Set the rating and provide
+				the feedback note:</h2>
+			<ul class="modal__star-rating">
+				<li class="modal__star"></li>
+				<li class="modal__star"></li>
+				<li class="modal__star"></li>
+				<li class="modal__star"></li>
+				<li class="modal__star"></li>
+			</ul>
+			<textarea placeholder="Type here" class="modal__textarea"></textarea>
+			<button class="modal__button-save">Save</button>
+		</div>
+	</div>
+
+	<div class="provider-status__modal visually-hidden">
+		<ul class="provider-modal__options-list">
+			<li class="provider-modal__options-item">
+				<div class="provider-status__inner-cover">
+					<div class="provider-status__icon ">
+						<svg width="17px" height="14px">
+							<use xlink:href='img/sprite.svg#forward-arrow'></use>
+						</svg>
+					</div>
+					<p class="provider-status__text"><span class="provider-status__text-span">Contacting</span></p>
+				</div>
+			</li>
+			<li class="provider-modal__options-item">
+				<div class="provider-status__inner-cover">
+					<div class="provider-status__icon">
+						<svg width="16px" height="16px">
+							<use xlink:href='img/sprite.svg#talked-to-client'></use>
+						</svg>
+					</div>
+					<p class="provider-status__text"><span class="provider-status__text-span">Talked to the
+							client</span></p>
+				</div>
+			</li>
+			<li class="provider-modal__options-item">
+				<div class="provider-status__inner-cover">
+					<div class="provider-status__icon">
+						<svg width="22px" height="14px">
+							<use xlink:href='img/sprite.svg#assessment'></use>
+						</svg>
+					</div>
+					<p class="provider-status__text"><span class="provider-status__text-span">Assessment
+							scheduled</span></p>
+				</div>
+			</li>
+			<li class="provider-modal__options-item">
+				<div class="provider-status__inner-cover">
+					<div class="provider-status__icon">
+						<svg width="17px" height="17px">
+							<use xlink:href='img/sprite.svg#contract-signed'></use>
+						</svg></div>
+					<p class="provider-status__text"><span class="provider-status__text-span">Contract Signed</span></p>
+				</div>
+			</li>
+			<li class="provider-modal__options-item provider-modal__options-item--cancel">
+				<div class="provider-status__inner-cover">
+					<div class="provider-status__icon">
+						<svg width="14px" height="18px">
+							<use xlink:href='img/sprite.svg#cancel'></use>
+						</svg>
+					</div>
+					<p class="provider-status__text"><span class="provider-status__text-span">Cancel the client</span>
+					</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="provider-more visually-hidden">
+		<ul class="provider-more__list">
+			<li class="provider-more__list-item">
+				<a href="#" class="provider-more__link">Send intro</a></li>
+			<li class="provider-more__list-item"><a href="#" class="provider-more__link provider-more__link--feedback">Provide
+					feedback</a>
+			</li>
+			<li class="provider-more__list-item"><a href="#" class="provider-more__link">Send reminder</a></li>
+			<li class="provider-more__list-item"><a href="#" class="provider-more__link">Background check</a></li>
+		</ul>
+	</div>
+	<script src="./js/script.js"></script>
+</body>
+
+</html>
